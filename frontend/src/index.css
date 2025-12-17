@@ -1,0 +1,20 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+/* for-verticle -scrollbar-hidden */
+body {
+  overflow: auto;
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+body {
+  scrollbar-width: none;
+}

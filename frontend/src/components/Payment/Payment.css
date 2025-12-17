@@ -1,0 +1,158 @@
+/* Wrapper */
+.payment-wrapper {
+  background: #f5f7fa;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.payment-header {
+  padding: 15px 30px;
+  color: #fff;
+  font-size: 26px;
+  font-weight: bold;
+  color: black;
+  display: flex;
+}
+
+/* Main Layout */
+.payment-container {
+  display: flex;
+  gap: 25px;
+  padding: 10px 30px;
+}
+
+/* LEFT SIDE */
+.payment-left {
+  width: 42%;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+/* Payment Option Box */
+.option-box {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  padding: 18px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.option-box:hover {
+  border-color: #007bff;
+}
+
+.option-box.active {
+  border-color: #007bff;
+  background: #e8f1ff;
+}
+
+.option-box.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.icon {
+  font-size: 22px;
+  margin-right: 8px;
+}
+
+.green {
+  color: green;
+  font-size: 13px;
+}
+
+.disabled-text {
+  font-size: 13px;
+  color: #777;
+}
+
+/* RIGHT SIDE */
+.payment-right {
+  width: 40%;
+}
+
+/* Right Box (UPI / card / COD panel) */
+.right-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.right-box input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.upi-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.verify-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 0 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.pay-btn {
+  width: 100%;
+  padding: 14px;
+  background: #3a3a3a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Price Card */
+.price-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
+.total span:last-child {
+  font-weight: bold;
+}
+
+.cashback-box {
+  background: #e7ffe7;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 12px;
+}
+
+@media(max-width: 1000px){
+  .payment-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .payment-left{
+    width: 75%;
+  }
+  .payment-right{
+    width: 75%;
+  }
+}

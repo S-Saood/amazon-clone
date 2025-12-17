@@ -1,0 +1,220 @@
+
+  .footer-top{
+      height: 50px;
+      background-color:#293b4d;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .footer-top p{
+      cursor: pointer;
+    }
+
+    .footer-middle-container{
+      height: 500px;
+    }
+    .footer-middle{
+      height: 400px;
+      background-color: #232F3E;   
+      display: flex;
+      justify-content: space-evenly;
+      padding-left: 10px;
+      padding-right: 10px;
+      color: white;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      margin-bottom: 1px;
+      column-gap: 30px;
+
+    }
+    .footer-bottom{
+      height: 210px;
+      background-color: #131A22;
+      display: flex;
+      justify-content: space-evenly;
+      padding-left: 10px;
+      padding-right: 10px;
+      color: white;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;   
+      column-gap: 10px;
+    }
+
+    .footer-mid-text-a{
+      width: 150px;
+      height: 100%;
+      padding-top: 20px;
+      line-height: 25px;
+      
+
+    }
+    .footer-mid-text-b{
+     width: 150px;
+      height: 100%;
+      padding-top: 20px;
+      line-height: 25px;
+    }
+
+        .footer-mid-text-c{
+       width: 220px;
+      height: 100%;
+      padding-top: 20px;
+      line-height: 25px;
+      
+
+    }
+    .footer-mid-text-d{
+       width: 220px;
+      height: 100%;
+      padding-top: 20px;
+      line-height: 25px;
+    }
+
+
+    .box-grid a{
+      display: flex;
+      flex-direction: column;
+      color: white;
+      cursor: pointer;
+      font-size: 13px;
+    }
+    .box-grid a:hover{
+      text-decoration: underline;
+    }
+
+    .box-grid > h3{
+      font-weight: bold;
+      padding-bottom: 10px;
+    }
+    
+
+    .footer-bottom-text-a, .footer-bottom-text-b{
+      width: 250px;
+      height: 100%;
+      padding-top: 25px;
+      line-height: 25px;
+      display: flex;
+      flex-direction: column;
+    }
+    .footer-content{
+      height: 100%;
+      width: 100%;
+      color: white;
+      text-decoration: none;
+    }
+    .footer-content p{
+      color: rgb(172, 172, 172);
+      line-height: 15px;
+      font-size: 12px;
+      
+    }
+    .footer-content a{
+      text-decoration: none;
+    }
+    .footer-content:hover{
+      text-decoration: underline;
+    }
+    .bb{
+      font-weight: bold;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: white;
+    }
+
+
+    .copy-right-area{
+      height: 60px;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      background-color: #131A22;
+      color: rgb(172, 172, 172);
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+}
+.footer-bottom-child-a, .footer-bottom-child-b{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 20px;
+  font-size: 13px;
+}
+.chil-b{
+  display: flex;
+  align-items: flex-start;
+  color: white;
+  font-weight: bold;
+  padding-top: 5px;
+}
+.footer-bottom-child > p{
+  padding-top: 5px;
+  margin: 0;
+}
+.footer-bottom-child a:hover{
+  text-decoration: underline;
+}
+
+
+
+
+    .footer-button-area{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+      column-gap: 10px;
+      background-color: #232F3E;   
+    
+      
+    }
+    .footer-button-logo{
+      width: 100px;
+      height: 50px;
+      margin-right: 0px;
+    }
+    .footer-logo{
+      width: 100%;
+      object-fit: contain;
+    }
+    .btn-footer-middle{
+      height: 35px;
+      width: 125px;
+      border-radius: 5px;
+      border: 1px solid silver;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      background-color: #232F3E; 
+      cursor: pointer;  
+    }
+    .btn-footer-middle:hover{
+      background-color: #293646;
+    }
+    
+    .btn-footer-middle p{
+      margin: 0;
+      color: white;
+    }
+
+
+
+.deal{
+  background-color: red;
+  height: 100px;
+}
+
+
+
+@media (max-width: 768px) {
+
+.footer-mid-text-d{
+  display: none;
+}
+.footer-bottom-text-a{
+  display: none;
+}
+}
+
+@media (max-width: 600px) {
+
+.footer-mid-text-b{
+  display: none;
+}
+}
+

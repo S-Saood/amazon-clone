@@ -1,0 +1,413 @@
+.description {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 20px 0;
+}
+
+.containerho {
+  width: 97%;
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  gap: 0px;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.child-container {
+  width: 100%;
+  height: 100%;
+}
+
+.child-container.a{
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  justify-content: sta;
+  gap: 20px;
+
+}
+
+.images-multiple{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  width: 100%;
+  justify-content: start;
+  align-items: center;
+  padding-top: 80px;
+  
+}
+.images-multiple img{
+  width: 80%;
+  height: 100px;
+  border-radius: 10px;
+  padding: 10px 5px;
+  border: 1px solid gray;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.images-multiple img:hover{
+    transform: scale(1.05);
+}
+
+
+.image-section {
+  height: 78%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 30px 20px;
+  gap: 20px;
+}
+
+.image-section img{
+  width: 100%;
+  object-fit: contain;
+  height: 80%;
+background: linear-gradient(#ebeaea, #f0f0e9);  
+padding: 10px 30px;
+display: flex;
+justify-content: start;
+align-items: start;
+
+}
+
+.image-section a {
+  color: #2162a1;
+  text-decoration: none;
+  font-size: 0.87rem;
+}
+
+.image-section a:hover {
+  text-decoration: underline;
+}
+
+.cover-img {
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+  margin: 10px 0;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+
+
+.child-container.b{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+
+.content {
+  height: 95%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  gap: 5px;
+}
+
+
+.content-box.detail{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  gap: 9px;
+  line-height: 7px;
+}
+
+.content-box {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.detail h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 30px;
+  color: black;
+}
+
+.choice{
+  background: linear-gradient(to left, red, #2162a1, #2162b8);
+  color: white;
+  font-weight: 500;
+  width: 125px;
+  margin-left: 10px;
+}
+
+.blue {
+  color: #2162a1;
+  font-weight: bold;
+}
+
+.inline {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 4px;
+}
+
+.line-bold{
+  height: 2px;
+  background-color: black;
+  color: black;
+  width: 100%;
+}
+
+.stars {
+  color: #fbbf24;
+}
+.input-reviews{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+
+
+.offer-box.tax{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.offers {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+
+}
+
+.offer-box {
+  margin-bottom: 15px;
+}
+
+.offer-head{
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.offer-box.card{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 450px;
+}
+
+.bank-offer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.boxoff {
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+  min-width: 150px;
+}
+
+.boxoff:hover {
+  transform: translateY(-3px);
+}
+
+.condition {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 200px;
+  padding: 10px 20px;
+}
+
+.condition-box{
+  display: flex;
+  
+}
+
+.condition-box p {
+  color: #2162a1;
+  font-size: 0.87rem;
+  cursor: pointer;
+}
+
+.child-container.price{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding-top: 70px;
+
+}
+
+.price-section {
+  height: 67%;
+  width: 90%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 20px 30px;
+  line-height: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.top-price {
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  line-height: 19px;
+  border-bottom: 1px solid black;
+}
+
+.middle-price {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.bottom-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.bottom-price .cart {
+  padding: 8px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cart {
+  background-color: rgb(235, 235, 26);
+  width: 130px;
+  height: 40px;
+}
+.cart:hover {
+  background-color: rgb(219, 219, 20);
+}
+
+.buy {
+  background-color: rgb(255, 179, 38);
+    height: 40px;
+    width: 130px;
+    border-radius: 20px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+
+
+}
+.buy:hover {
+  background-color: rgb(240, 157, 3);
+}
+
+.buynow-detail{
+  border: none;
+  color: red;
+}
+
+#last-btn {
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 80%;
+  height: 40px;
+  font-weight: lighter;
+
+}
+
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.swiper-slide{
+  height: 100%;
+  width: 100%;
+}
+
+
+.popup {
+  position: fixed;
+  top: 120px;
+  right: 20px;
+  background: #4caf50;
+  color: white;
+  padding: 20px 20px;
+  z-index: 1000;
+  font-weight: 600;
+  height: 50px;
+  width: 17%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-signing{
+  font-size: 25px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.sing-pri{
+  font-size: 15px;
+  font-weight: 200;
+}
+
+
+
+@media (max-width: 1350px) {
+  .containerho {
+    grid-template-columns: 1fr 1fr;
+    /* display: flex;
+    flex-direction: column; */
+  }
+  .child-container.price{
+    width: 100%;
+  }
+  .price-section{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 750px) {
+  .containerho {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+

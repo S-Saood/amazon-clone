@@ -1,0 +1,274 @@
+*{
+  font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main-container-product{
+  width: 100;
+  height: auto;
+  background: linear-gradient(#ebeaea, #f0f0e9);
+}
+
+.heros{
+  height: 600px; /*example height for hero*/
+  width: 100%;
+  position: relative;
+}
+
+.hero_1{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heros::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px; /* height of fade */
+  background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.9));
+  pointer-events: none;
+}
+
+.product-section {
+  position: relative;
+   /* move up to overlap hero */
+  z-index: 5; /* ensure it's above hero */
+   /* prevent footer overlap */
+  margin-top: -300px;
+  padding-bottom: 50px;
+
+}
+
+.Card-container{
+  height: auto;
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.slide-container{
+  margin-top: 30px;
+  width: 95%;
+  background-color: white;
+  height: 370px;
+  display: flex;
+  flex-direction: row;
+  padding: 20px 20px 50px 20px;
+  gap: 10px;
+  margin: 0 auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  justify-content: start;
+  scrollbar-width: none;
+}
+.slide-container:hover{
+  scrollbar-width: thin;
+}
+
+.slide-container::-webkit-scrollbar{
+  display: none;
+}
+
+
+.slide-box{
+  background-color: transparent;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+  min-width: 200px;
+  height: 100%;
+  flex-shrink: 0;
+background: linear-gradient(#ebeaea, #f0f0e9);  
+padding: 10px 10px;
+border-radius: 5px;
+margin-bottom: 40px;
+margin-top: 10px;
+}
+
+.slide-card{
+  width: 280px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  background-color: white;
+  padding-top: 10px;
+  
+}
+
+.slide-card img{
+  width: 90%;
+  height: 180px;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+
+.card{
+  background-color: white;
+  height: 400px;
+  display: grid;
+  grid-template-rows: 60px 1fr 40px;
+  gap: 0px;
+  padding: 0px 10px;
+  overflow: hidden;
+  
+}
+
+.card-box{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0px 10px;
+}
+/* .card-box.images{
+} */
+
+.card-box.heading{
+  font-size: 20px;
+  font-weight: bolder;
+  padding-top: 10px;
+}
+
+.card-box.seeall{
+  font-size: 13px;
+  color: darkblue;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+
+
+
+.seeall p{
+  cursor: pointer;
+}
+.seeall p:hover{
+  text-decoration: underline;
+}
+
+
+.name{
+  font-size: 12px;
+  color: black;
+}
+
+.price-name{
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.description{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: #555;
+
+}
+.description p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+
+.images{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px;
+  row-gap: 0;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.images img{
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.img1{
+  text-decoration: none;
+  padding-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.slide-card{
+  text-decoration: none;
+  
+}
+.price-sign{
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.sign-pri{
+  font-size: 12px;
+  
+  align-items: start;
+}
+
+.price-name-slide{
+  color: black;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.price-name-slide-price{
+  color: black;
+  font-weight: bolder;
+  font-size: 22px;
+
+}
+
+@media(max-width:1200px){
+  .Card-container{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media(max-width: 850px){
+    .Card-container{
+      grid-template-columns: 1fr 1fr;
+      overflow-y: auto;
+      overflow-x: auto;
+    }
+    @media(max-width: 550px){
+    .Card-container{
+      grid-template-columns: 1fr;
+    }
+  }
+  }
+}
