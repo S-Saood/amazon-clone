@@ -142,9 +142,9 @@ function Footer() {
       </div>
       <div className="copy-right-area">
         <div className="footer-bottom-child-a">
-              <a className="hover-link" className="bb">Consitions of Use & Sales</a>
-              <a className="hover-link" className="bb">Privacy Notice</a>
-              <a className="hover-link" className="bb">Interest-BAsed Ads</a>
+              <a className="hover-link bb">Consitions of Use & Sales</a>
+              <a className="hover-link bb">Privacy Notice</a>
+              <a className="hover-link bb">Interest-BAsed Ads</a>
         </div>
         <div className="footer-bottom-child-b chil-b"><p className="copyright">&copy; 1996-2025, Amazon.com, Inc.or its affiliates</p>
         </div>

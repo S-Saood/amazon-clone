@@ -26,7 +26,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Product query={query} />}  />
         <Route path="/product/:id" element={<Detail setCartCount={setCartCount} />} />
-        <Route path="/cart" element={<Cart cartCount={cartCount} setCartCount={setCartCount} setCartCount={setCartCount} />} />
+        <Route path="/cart" element={<Cart cartCount={cartCount} setCartCount={setCartCount} />} />
         <Route path="/login" element={<Login />} />
         <Route path="/buynow/:id" element={<Buynow />} />
         <Route path="/payment" element={<Payment/>} />
