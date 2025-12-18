@@ -19,7 +19,7 @@ function Product({query}) {
   //fetching products from backend to home page
 const fetchproducts = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/api/cards");
+        const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/cards`);
         // console.log("All products: ", res.data)
         setProducts(res.data);
       } catch (error) {

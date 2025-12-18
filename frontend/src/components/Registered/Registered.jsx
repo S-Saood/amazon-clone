@@ -25,7 +25,7 @@ function Registered() {
     // console.log(payLoad)
     //sending data to backend 
     try {
-      const result = await axios.post("http://localhost:3000/register/api", payLoad)
+      const result = await axios.post(`${import.meta.env.VITE_API_URL}/register/api`, payLoad)
       console.log("user response from backend:", result.data)
 
       //store in localstorage

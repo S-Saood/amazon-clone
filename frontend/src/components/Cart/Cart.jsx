@@ -26,7 +26,7 @@ async function fetchCart() {
       const user_id = localStorage.getItem("user_id")
 
       try {
-        const res = await axios.get(`http://localhost:3000/api/cart/${user_id}`);
+        const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/cart/${user_id}`);
         setCartItems(res.data.cart);
         // Calculate total quantity from database
       const totalCount = res.data.cart.reduce((sum, item) => sum + item.quantity, 0)

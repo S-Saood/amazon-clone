@@ -41,7 +41,7 @@ function Detail({ setCartCount }) {
         quantity: 1,
       };
 
-      const res = await axios.post("http://localhost:3000/api/cart", cartItem);
+      const res = await axios.post(`${import.meta.env.VITE_API_URL}/api/cart`, cartItem);
       console.log("Added to cart", res.data); //response from backend
 
       //update count

@@ -5,6 +5,8 @@ import {useLocation } from 'react-router-dom'
 function PaymentSuccess() {
   const query = new URLSearchParams(useLocation().search);
   const reference = query.get("reference")
+
+  
   return (
     <div className="payment-success-continer">
       <div className="payment-success-card">

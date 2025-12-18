@@ -21,7 +21,7 @@ function Login() {
 
     try{
       //send email and password to nackend
-  const res = await axios.post("http://localhost:3000/api/login", {
+  const res = await axios.post(`${import.meta.env.VITE_API_URL}/api/login`, {
     email, password
   })
   //backend send back a user id
